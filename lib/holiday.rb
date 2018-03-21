@@ -79,18 +79,6 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, holiday_supplies|
       puts " #{holiday.to_s.split('_').collect
       {|holiday| holiday.capitalize! }.join(' ')}: #{holiday_supplies.join(", ")}"
-
-
-      # if holiday.to_s.include? '_'
-      #   holiday_array = holiday.to_s.split('_')
-      #   holiday_array.collect do |supply|
-      #     supply.capitalize!
-      #   end
-      #   holiday_updated = holiday_array.join(' ')
-      # else
-      #   holiday_updated = holiday.to_s.capitalize
-      # end
-      # puts "#{holiday_upadated}: #{holiday_supplies.join(", ")}"
     end
   end
 end
